@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Exception exception = new Exception("Произошло исключение");
+            exception.Data.Add("Дата создания исключения:", DateTime.Now);
+            exception.HelpLink = "www.yandex.ru";
         }
     }
 }
